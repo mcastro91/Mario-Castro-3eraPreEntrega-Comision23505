@@ -1,0 +1,159 @@
+/* Inicio estilo grid index */
+#grilla {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "section-index"
+        "footer";
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+}
+
+/* Fin estilo grid index */
+
+/* Inicio definicion areas grid index */
+header {
+    grid-area: header;
+}
+
+.section-index {
+    grid-area: section-index;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* Fin definicion areas grid index */
+
+/* Inicio estilo grid galeria */
+#grilla-galeria {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "titulo"
+        "fotos"
+        "video-uno"
+        "video-dos"
+        "footer";
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-columns: auto;
+    grid-row-gap: 1rem;
+}
+
+/* Fin estilo grid galeria */
+
+/* Inicio definicion areas grid galeria */
+header {
+    grid-area: header;
+}
+
+.titulo {
+    grid-area: titulo;
+}
+
+.fotos {
+    grid-area: fotos;
+}
+
+.video-uno {
+    grid-area: video-uno;
+}
+
+.video-dos {
+    grid-area: video-dos;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* Fin definicion areas grid galeria */
+
+/* Inicio grid ubicacion */
+#grilla-ubicacion{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "titulo"
+    "mapa-uno"
+    "mapa-dos"
+    "footer";
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: auto;
+}
+/* Fin grid ubicacion */
+
+/* Inicio definicion areas ubicacion */
+header{
+    grid-area: header;
+}
+.titulo{
+    grid-area: titulo;
+}
+#mapa-uno{
+    grid-area: mapa-uno;
+}
+#mapa-dos{
+    grid-area: mapa-dos;
+}
+footer{
+    grid-area: footer;
+}
+/* Fin definicion areas ubicacion */
+
+/* Inicio estilo grilla faq */
+#grilla-faq{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "titulo"
+    "faq"
+    "footer";
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto;
+}
+/* Fin estilo grilla faq */
+
+/* Inicio definicion areas faq */
+header{
+    grid-area: header;
+}
+.titulo-faq{
+    grid-area: titulo;
+}
+.parrafo-faq{
+    grid-area: faq;
+}
+footer{
+    grid-area: footer;
+}
+/* Fin definicion areas faq */
+
+/* Inicio grilla asociate */
+#grilla-asociate{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "titulo"
+    "asociate"
+    "footer";
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto;
+}
+/* Fin estilo grilla asociate */
+
+/* Inicio definicion areas asociate */
+header{
+    grid-area: header;
+}
+.titulo-asociate{
+    grid-area: titulo;
+}
+.formulario{
+    grid-area: asociate;
+}
+footer{
+    grid-area: footer;
+}
+/* Fin definicion areas asociate */

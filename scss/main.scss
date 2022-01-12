@@ -1,0 +1,211 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+@import "_grillas.scss";
+@import "_estilo-index.scss";
+@import "_estilo-galeria.scss";
+@import "_estilo-ubicacion.scss";
+@import "_estilo-faq.scss";
+@import "_estilo-asociate.scss";
+$border: .125rem solid white;
+$margin: 1.25rem;
+@mixin estilo ($br, $marg, $fs){
+    border-radius: $br;
+    margin: $marg;
+    font-size: $fs;
+}
+
+/* Inicio estilo header */
+nav {
+    background: linear-gradient(to top, black, white);
+    border-top: $border;
+    border-bottom: $border;
+
+    .nav-a {
+        @include estilo(.25rem, .43rem, 1.25rem);
+        text-decoration: none;
+        background-color:black;
+        color: white;
+        padding: .43rem;
+        font-style: italic;
+        transition: .5s;
+
+        &:hover {
+            background-color: white;
+            color: black;
+        }
+    }
+
+    .boton {
+        border-color: black;
+        color: white;
+        background-color: black;
+        font-style: italic;
+        font-size: 1.25rem;
+        transition: .5s;
+
+        &:hover {
+            color: black;
+            background-color: white;
+        }
+    }
+}
+
+/* Fin estilo header */
+
+/* Inicio estilo footer */
+footer {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 3rem;
+    border-top: $border;
+    border-bottom: $border;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+
+    ul {
+        list-style: none;
+        font-size: 1rem;
+    }
+
+    .footer-lista-redes {
+        list-style: none;
+        display: flex;
+        flex-flow: row wrap;
+        margin-top: 0.6rem;
+
+        li {
+            margin: .125rem;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        transition: .5s;
+
+        &:hover {
+            font-size: 1.25rem;
+            color: red;
+        }
+    }
+}
+
+/* Fin estilo footer */
+
+/* Inicio estilo h1 */
+h1{
+    color: white;
+    text-shadow: .125rem .125rem .125rem black;
+    margin-top: $margin;
+    margin-bottom: $margin;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-style: italic;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    animation-name: titulo;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: .5s; 
+    @keyframes titulo {
+        0% {opacity: 0;}
+        100% {opacity: 1;}   
+    }
+}
+/* Fin estilo h1 */
+
+/* Inicio MQ 768px */
+@media screen and (max-width: 768px) {
+        
+    /* Inicio estilo header 768px */
+    nav .nav-a{
+        @include estilo(0.25rem, .125rem, 1rem);
+        background-color: none;
+        padding: .125rem;
+    }
+    .pad{
+        padding: .125rem;
+    }
+    nav .boton{
+        font-size: 1rem;
+    }
+    /* Fin estilo header 768px */
+
+    /* Inicio estilo footer 768px */
+    
+    footer{  
+        ul {
+            list-style: none;
+            font-size: .6rem;
+        }
+        a {
+            &:hover {
+                font-size: 1rem;
+                color: red;
+            }
+        }
+    }
+    .redes{
+        width: 75%;
+        height: 75%;
+    }
+
+    /* Fin estilo footer 768px */
+
+    /* Inicio estilo h1 768px */
+    h1{
+        font-size: 2rem;
+    }
+    /* Fin estilo h1 768px */
+}
+
+/* Inicio MQ 426px */
+@media screen and (max-width: 426px) {
+    
+    /* Inicio estilo header 426px */
+    header .nav-a{
+        font-size: .6rem;
+    }
+    .icono{
+        width: 2rem;
+        height: 2rem;
+    }
+    nav .boton{
+        font-size: .6rem;
+    }
+    /* Fin estilo header 426px */
+
+    /* Inicio estilo footer 426px */
+    footer{
+        margin-top: 2rem;
+        ul{
+            font-size: .3rem;
+        }
+        a {
+            &:hover {
+                font-size: .6rem;
+                color: red;
+            }
+        }
+    }
+    .redes{
+        width: 50%;
+        height: 50%;
+    }
+    /* Fin estilo footer 426px */
+
+    /* Inicio estilo h1 426px */
+    h1{
+        font-size: 1.25rem;
+    }
+    /* Fin estilo h1 426px */
+}

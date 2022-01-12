@@ -1,0 +1,46 @@
+// Inicio estilo body index
+.body-index {
+    background: linear-gradient(to bottom, red, black)
+}
+// Fin estilo body index
+
+/* Inicio estilo parrafos index desktop */
+.parrafo-index {
+    color: #ffffff;
+    text-shadow: 2px 2px 2px black;
+    font-size: 1.25rem;
+
+    &:hover {
+        background-color: white;
+        color: black;
+        text-shadow: none;
+    }
+}
+
+/* Fin estilo parrafos index desktop */
+
+/* Inicio MQ 768px */
+@media screen and (max-width: 768px) {
+
+    /* Inicio estilo parrafos index 768px */
+    .parrafo-index {
+        font-size: 1rem;
+    }
+
+    /* Fin estilo parrafos index 768px */
+}
+/* Fin MQ 768px */
+
+// Inicio MQ 426px
+@media screen and (max-width: 426px) {
+
+    //Fin estilo body index 426px 
+
+    /* Inicio estilo parrafos index 426px */
+    .parrafo-index {
+        font-size: .6rem;
+    }
+
+    /* Fin estilo parrafos index 426px */
+}
+// Fin MQ 426px

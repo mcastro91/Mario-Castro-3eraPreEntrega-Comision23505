@@ -1,0 +1,33 @@
+/* Inicio estilo body ubicacion */
+.body-ubicacion{
+    background: radial-gradient(red, black)
+}
+/* Fin estilo body ubicacion */
+
+/* Inicio estilo h dos */
+.titulo-dos{
+    color: black;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    text-align: center;
+    font-size: 1.25rem;
+    font-style: italic;
+    font-family: sans-serif;
+    background-color: white;
+}
+/* Fin estilo h dos */
+
+/* Inicio estilo mapas */
+.centrado{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.mapa{
+    width: 90%;
+    height: 30rem;
+}
+
+/* Fin estilo mapas */
+

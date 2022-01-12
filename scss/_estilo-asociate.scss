@@ -1,0 +1,34 @@
+/* Inicio estilo body asociate */
+.body-asociate{
+    background: linear-gradient(to top, red, black)
+}
+/* Fin estilo body asociate */
+
+/* Inicio estilo formulario */
+
+.formulario{
+    justify-content: center;
+    margin-top: 20px;
+    color: white;
+}
+.botones{
+    border: 1px solid white;
+    color: white;
+    background-color: black;
+    &:hover{
+        background-color: white;
+        color: black;
+    }
+}
+/* Fin estilo formulario */
+
+// Inicio estilo asociate 426px
+@media screen and (max-width: 426px) {
+    .botones{
+        font-size: .7rem;
+    }
+    .formulario{
+        font-size: .7rem;
+    }
+}
+// Fin estilo asociate 426px
