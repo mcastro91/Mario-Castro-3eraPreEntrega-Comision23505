@@ -55,7 +55,7 @@ footer {
 #grilla-ubicacion {
   display: grid;
   grid-template-areas: "header" "titulo" "mapa-uno" "mapa-dos" "footer";
-  grid-template-rows: auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
   grid-template-columns: auto; }
 
 /* Fin grid ubicacion */
@@ -65,6 +65,9 @@ header {
 
 .titulo {
   grid-area: titulo; }
+
+.galeria {
+  grid-area: galeria; }
 
 #mapa-uno {
   grid-area: mapa-uno; }
@@ -113,7 +116,7 @@ header {
 .titulo-asociate {
   grid-area: titulo; }
 
-.formulario {
+.asociate {
   grid-area: asociate; }
 
 footer {
@@ -121,36 +124,34 @@ footer {
 
 /* Fin definicion areas asociate */
 .body-index {
-  background: linear-gradient(to bottom, red, black); }
+  background: url(https://river-plate-mario.000webhostapp.com/asset/fondo.png);
+  background-repeat: cover; }
 
 /* Inicio estilo parrafos index desktop */
 .parrafo-index {
+  width: 40%;
   color: #ffffff;
   text-shadow: 2px 2px 2px black;
   font-size: 1.25rem; }
-  .parrafo-index:hover {
-    background-color: white;
-    color: black;
-    text-shadow: none; }
 
 /* Fin estilo parrafos index desktop */
-/* Inicio MQ 768px */
 @media screen and (max-width: 768px) {
+  .body-index {
+    background: url(https://river-plate-mario.000webhostapp.com/asset/fondo.png);
+    background-size: 150% 100%; }
   /* Inicio estilo parrafos index 768px */
   .parrafo-index {
+    width: 60%;
     font-size: 1rem; }
   /* Fin estilo parrafos index 768px */ }
 
-/* Fin MQ 768px */
 @media screen and (max-width: 426px) {
-  /* Inicio estilo parrafos index 426px */
-  .parrafo-index {
-    font-size: .6rem; }
-  /* Fin estilo parrafos index 426px */ }
+  .body-index {
+    background-size: 150%; } }
 
 /* Inicio estilo body galeria */
 .body-galeria {
-  background: linear-gradient(to bottom, red, black); }
+  background: linear-gradient(to top, red, black); }
 
 /* Fin estilo body galeria */
 /* Inicio estilo img y vid */
@@ -215,7 +216,7 @@ footer {
 /* Fin estilo mapas */
 /* Inicio estilo body faq */
 .body-faq {
-  background: linear-gradient(to bottom, red, black); }
+  background: linear-gradient(to top, red, black); }
 
 /* fin estilo body faq */
 /* Inicio estilo titulo faq */
@@ -230,15 +231,15 @@ footer {
   margin-top: 1.25rem; }
 
 /* Fin estilo parrafo faq */
-/* Inicio estilo respuestas faq */
+/* Inicio estilo preg y resp faq */
 .respuestas-link {
   text-decoration: none; }
 
-/* Fin estilo respuestas faq */
 .preguntas {
   font-weight: bolder;
   background-color: tomato; }
 
+/* Fin estilo preg y resp faq */
 /* Inicio estilo body asociate */
 .body-asociate {
   background: linear-gradient(to top, red, black); }
@@ -259,12 +260,6 @@ footer {
     color: black; }
 
 /* Fin estilo formulario */
-@media screen and (max-width: 426px) {
-  .botones {
-    font-size: .7rem; }
-  .formulario {
-    font-size: .7rem; } }
-
 /* Inicio estilo header */
 nav {
   background: linear-gradient(to top, black, white);
@@ -367,8 +362,7 @@ h1 {
   /* Fin estilo header 768px */
   /* Inicio estilo footer 768px */
   footer ul {
-    list-style: none;
-    font-size: .6rem; }
+    list-style: none; }
   footer a:hover {
     font-size: 1rem;
     color: red; }
@@ -381,24 +375,22 @@ h1 {
     font-size: 2rem; }
   /* Fin estilo h1 768px */ }
 
+/* Fin MQ 768px */
 /* Inicio MQ 426px */
 @media screen and (max-width: 426px) {
   /* Inicio estilo header 426px */
   header .nav-a {
-    font-size: .6rem; }
+    font-size: 1rem; }
   .icono {
     width: 2rem;
     height: 2rem; }
-  nav .boton {
-    font-size: .6rem; }
   /* Fin estilo header 426px */
   /* Inicio estilo footer 426px */
   footer {
     margin-top: 2rem; }
     footer ul {
-      font-size: .3rem; }
+      font-size: 1rem; }
     footer a:hover {
-      font-size: .6rem;
       color: red; }
   .redes {
     width: 50%;
@@ -406,5 +398,7 @@ h1 {
   /* Fin estilo footer 426px */
   /* Inicio estilo h1 426px */
   h1 {
-    font-size: 1.25rem; }
+    font-size: 1.5rem; }
   /* Fin estilo h1 426px */ }
+
+/* Fin MQ 426px */

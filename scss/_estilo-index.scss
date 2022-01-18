@@ -1,46 +1,44 @@
 // Inicio estilo body index
-.body-index {
-    background: linear-gradient(to bottom, red, black)
+.body-index{
+    background: url(https://river-plate-mario.000webhostapp.com/asset/fondo.png);
+    background-repeat: cover;
 }
 // Fin estilo body index
 
 /* Inicio estilo parrafos index desktop */
 .parrafo-index {
+    width: 40%;
     color: #ffffff;
     text-shadow: 2px 2px 2px black;
     font-size: 1.25rem;
-
-    &:hover {
-        background-color: white;
-        color: black;
-        text-shadow: none;
-    }
 }
-
 /* Fin estilo parrafos index desktop */
 
-/* Inicio MQ 768px */
+// Inicio MQ768px
 @media screen and (max-width: 768px) {
+    // Inicio estilo body index 768px
+    .body-index{
+        background: url(https://river-plate-mario.000webhostapp.com/asset/fondo.png);
+        background-size: 150% 100%;
+    }
+    // Fin estilo body index 768px
 
     /* Inicio estilo parrafos index 768px */
     .parrafo-index {
+        width: 60%;
         font-size: 1rem;
     }
-
     /* Fin estilo parrafos index 768px */
 }
-/* Fin MQ 768px */
+// Fin MQ 768px
 
 // Inicio MQ 426px
 @media screen and (max-width: 426px) {
 
-    //Fin estilo body index 426px 
-
-    /* Inicio estilo parrafos index 426px */
-    .parrafo-index {
-        font-size: .6rem;
+    // Inicio estilo body 426px
+    .body-index{
+        background-size: 150%;
     }
-
-    /* Fin estilo parrafos index 426px */
+    // Inicio estilo body 426px
 }
 // Fin MQ 426px

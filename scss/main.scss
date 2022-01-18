@@ -145,7 +145,6 @@ h1{
     footer{  
         ul {
             list-style: none;
-            font-size: .6rem;
         }
         a {
             &:hover {
@@ -167,20 +166,18 @@ h1{
     }
     /* Fin estilo h1 768px */
 }
+/* Fin MQ 768px */
 
 /* Inicio MQ 426px */
 @media screen and (max-width: 426px) {
     
     /* Inicio estilo header 426px */
     header .nav-a{
-        font-size: .6rem;
+        font-size: 1rem;
     }
     .icono{
         width: 2rem;
         height: 2rem;
-    }
-    nav .boton{
-        font-size: .6rem;
     }
     /* Fin estilo header 426px */
 
@@ -188,11 +185,10 @@ h1{
     footer{
         margin-top: 2rem;
         ul{
-            font-size: .3rem;
+            font-size: 1rem;
         }
         a {
             &:hover {
-                font-size: .6rem;
                 color: red;
             }
         }
@@ -205,7 +201,8 @@ h1{
 
     /* Inicio estilo h1 426px */
     h1{
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
     /* Fin estilo h1 426px */
 }
+/* Fin MQ 426px */

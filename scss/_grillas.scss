@@ -79,7 +79,7 @@ footer {
     "mapa-uno"
     "mapa-dos"
     "footer";
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
     grid-template-columns: auto;
 }
 /* Fin grid ubicacion */
@@ -90,6 +90,9 @@ header{
 }
 .titulo{
     grid-area: titulo;
+}
+.galeria{
+    grid-area: galeria;
 }
 #mapa-uno{
     grid-area: mapa-uno;
@@ -150,7 +153,7 @@ header{
 .titulo-asociate{
     grid-area: titulo;
 }
-.formulario{
+.asociate{
     grid-area: asociate;
 }
 footer{
