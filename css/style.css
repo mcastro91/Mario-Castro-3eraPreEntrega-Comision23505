@@ -137,7 +137,6 @@ footer {
 /* Fin estilo parrafos index desktop */
 @media screen and (max-width: 768px) {
   .body-index {
-    background: url(https://river-plate-mario.000webhostapp.com/asset/fondo.png);
     background-size: 150% 100%; }
   /* Inicio estilo parrafos index 768px */
   .parrafo-index {
